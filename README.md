@@ -50,7 +50,8 @@ curl -fsSL https://dl.securytik.com/sova-install.sh | sudo bash
 ```
 
 The installer sets up the hub (WireGuard, FRR, strongSwan, xl2tpd, nftables, unbound), PostgreSQL, the panel
-behind nginx with a Let's Encrypt certificate, and prints the panel address and the first admin password.
+behind nginx on the server's IP (`http://<server-ip>/admin/`), and prints the panel address and the first admin
+password. For HTTPS on your own domain, bind the panel with **System → Cloudflare Tunnel**.
 
 Open the panel → **Sites → + Site** → add its subnets → paste the one-line command into the branch MikroTik.
 
