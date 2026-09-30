@@ -42,6 +42,13 @@ On a fresh **Ubuntu 24.04 or 26.04** VPS with a public IP (1 vCPU / 1 GB RAM is 
 curl -fsSL https://sova.securytik.com/install.sh | sudo bash
 ```
 
+**github.com blocked in your country?** The command above detects it and switches to the SecuryTik
+mirror by itself — or install straight from the mirror (same installer, nothing fetched from GitHub):
+
+```bash
+curl -fsSL https://dl.securytik.com/sova-install.sh | sudo bash
+```
+
 The installer sets up the hub (WireGuard, FRR, strongSwan, xl2tpd, nftables, unbound), PostgreSQL, the panel
 behind nginx with a Let's Encrypt certificate, and prints the panel address and the first admin password.
 
@@ -62,6 +69,19 @@ Yearly billing gets two months free. Every requested plan is **approved for one 
 ## Updates
 
 Sova checks for signed releases daily and updates itself from **System → Update**.
+
+## Forgot the admin password?
+
+On the hub, as root (the tool is in [`tools/`](tools/sova-reset-admin-password.sh)):
+
+```bash
+curl -fsSL -o sova-reset-admin-password.sh \
+  https://raw.githubusercontent.com/mhdhaidarah/sova/main/tools/sova-reset-admin-password.sh
+sudo bash sova-reset-admin-password.sh --list   # list the superadmin accounts
+sudo bash sova-reset-admin-password.sh          # reset (asks for the new password twice)
+```
+
+It changes only that account's password (and re-enables the account) — no site, tunnel or user data.
 
 ---
 
