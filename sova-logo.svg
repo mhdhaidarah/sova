@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sova">
+  <defs>
+    <linearGradient id="sova-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="sova-glow" cx="0.5" cy="0.48" r="0.6">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sova-stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#sova-bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#sova-glow)"/>
+  <!-- Shield with a lock inside: Sova joins sites and people through
+       encrypted tunnels — SecuryTik Overlay & VPN Automation. -->
+  <path fill="none" stroke="url(#sova-stroke)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"
+        d="M32 11 L49 17.5 V31 C49 42 41.5 49.5 32 53 C22.5 49.5 15 42 15 31 V17.5 Z"/>
+  <g fill="none" stroke="url(#sova-stroke)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26.5 30 V26.5 a5.5 5.5 0 0 1 11 0 V30"/>
+    <rect x="23.5" y="30" width="17" height="12.5" rx="2.6"/>
+  </g>
+  <circle cx="32" cy="35.4" r="1.9" fill="#22d3ee"/>
+  <path d="M32 37 V39.2" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+</svg>
