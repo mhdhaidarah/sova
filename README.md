@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="sova-logo.svg" width="112" alt="Sova logo">
+  <img src="sova-logo.svg" width="112" alt="SOVA logo">
 </p>
 
-<h1 align="center">Sova</h1>
+<h1 align="center">SOVA</h1>
 <p align="center"><b>SecuryTik Overlay &amp; VPN Automation</b><br>
 Join every branch and every remote employee into one private network — through one hub you own.</p>
 
@@ -15,9 +15,9 @@ Join every branch and every remote employee into one private network — through
 
 ---
 
-## Why Sova
+## Why SOVA
 
-Most branch offices sit behind NAT with no public IP. Sova turns a small Ubuntu VPS into the **hub** of your
+Most branch offices sit behind NAT with no public IP. SOVA turns a small Ubuntu VPS into the **hub** of your
 network: every MikroTik branch dials out to it, every remote employee connects to it, and everything can
 reach everything else **as if they were in the same building** — real addresses, no NAT inside the fleet.
 
@@ -27,11 +27,12 @@ reach everything else **as if they were in the same building** — real addresse
 | 🔀 **Dynamic routing** | OSPF over the tunnels: add a branch later and every other branch learns it by itself. The hub only accepts a branch's own addresses. |
 | 🛡️ **Two tunnels per branch** | WireGuard first, L2TP/IPsec as automatic backup. |
 | 📋 **Paste-ready RouterOS scripts** | Fill in a site, paste one line into the MikroTik terminal. Idempotent — paste again any time. |
-| 🧑‍💻 **Remote access** | WireGuard (QR code) or native L2TP/IPsec. *Corporate* (split tunnel) or *Full passthrough* (all traffic via the hub). Per-user access to sites and subnet types. |
+| 🧑‍💻 **Remote access** | WireGuard (QR code), native L2TP/IPsec or OpenVPN (OpenVPN Connect apps and IP desk phones). *Corporate* (split tunnel) or *Full passthrough* (all traffic via the hub). Per-user access to sites and subnet types. |
 | 🔒 **Policies & DNS** | Allow/deny rules between any subnets, enforced at the hub. Internal DNS names for every site. |
 | 📈 **Monitoring & alerts** | Tunnel latency, loss, traffic, route checks, site-down alerts to Telegram, WhatsApp and email. Editable dashboards. |
 | 🛠️ **Manager** | Monitor and control the branch MikroTiks: health, time zone, DNS, updates, website & app filtering, bulk actions. |
-| 🔌 **API & webhooks** | REST API with scoped tokens; signed webhooks for sites, users and alerts. |
+| 📞 **IP phones & PBX** | Keep the PBX private; branch phones, desk phones over OpenVPN and mobile softphones reach it through the tunnels. |
+| 🔌 **API & webhooks** | REST API with scoped tokens, HTTP(S) to devices inside the branches; signed webhooks for sites, users and alerts. |
 | ☁️ **Cloudflare Tunnel** | Put the panel on your own domain in one step. |
 
 ## Install
@@ -69,7 +70,7 @@ Yearly billing gets two months free. Every requested plan is **approved for one 
 
 ## Updates
 
-Sova checks for signed releases daily and updates itself from **System → Update**.
+SOVA checks for signed releases daily and updates itself from **System → Update**.
 
 ## Forgot the admin password?
 
@@ -86,5 +87,5 @@ It changes only that account's password (and re-enables the account) — no site
 
 ---
 
-<p align="center">Sova is a <a href="https://securytik.com">SecuryTik</a> product. This repository holds the compiled
+<p align="center">SOVA is a <a href="https://securytik.com">SecuryTik</a> product. This repository holds the compiled
 releases; the source is closed. © 2026 SecuryTik.</p>
